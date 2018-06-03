@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score : 0"
+        android:layout_margin="6dp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:background="#FD8A00"
+        android:id="@+id/score_view"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:layout_marginTop="72dp"
+        style="@style/fontStyle"
+        android:background="#FD8A00"
+        android:id="@+id/question_view"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="firstButtonCalled"
+        style="@style/fontStyle"
+        android:id="@+id/firstOption"
+        android:layout_marginTop="64dp"
+        android:background="#FD8A00"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/fontStyle"
+        android:onClick="secondButtonCalled"
+        android:id="@+id/secondOption"
+        android:layout_marginTop="4dp"
+        android:background="#FD8A00"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/fontStyle"
+        android:layout_marginTop="4dp"
+        android:id="@+id/thirdOption"
+        android:onClick="thirdButtonCalled"
+        android:background="#FD8A00"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/fontStyle"
+        android:id="@+id/fourthOption"
+        android:onClick="fourthButtonCalled"
+        android:layout_marginTop="4dp"
+        android:background="#FD8A00"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        style="@style/fontStyle"
+        android:text="PREVIOUS"
+        android:id="@+id/next"
+        android:onClick="previousButtonCalled"
+        android:layout_margin="8dp"
+        android:background="#FD8A00"
+        />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="NEXT"
+        android:id="@+id/previous"
+        android:onClick="nextButtonCalled"
+        style="@style/fontStyle"
+        android:layout_margin="8dp"
+        android:background="#FD8A00"
+        />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
